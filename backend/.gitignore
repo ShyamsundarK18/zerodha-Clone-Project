@@ -1,0 +1,25 @@
+# Node
+node_modules/
+.env
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode-test
+.vscode/
+
+# React
+*.cache
+*.parcel-cache
+*.eslintcache
+
+# MongoDB dump
+dump/
