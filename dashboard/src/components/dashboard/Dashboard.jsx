@@ -12,7 +12,7 @@ import Summary from "../summary/Summary";
 //import WatchList from "../watchlist/WatchList";
 import { GeneralContextProvider } from "../GeneralContext/GeneralContext.jsx";
 import Stocks from "../stock/Stocks.jsx";
-import NotFound from "../notFound/NotFound.jsx";
+import NotFound from "../notfound/NotFound.jsx";
 
 function Dashboard() {
   const location = useLocation();
