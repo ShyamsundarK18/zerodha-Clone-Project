@@ -60,7 +60,7 @@ const ProtectedRoute = ({ children }) => {
   }
 
   if (!isAuthenticated) {
-    window.location.href = `${FRONTEND_URL}/login`;
+    window.location.href = `${FRONTEND_URL}`;
     return null;
   }
 
