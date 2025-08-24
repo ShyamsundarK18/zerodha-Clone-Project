@@ -1,0 +1,50 @@
+.nav-logo {
+  width: 25%;
+  height: auto;
+  margin-left: 0;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.nav-link {
+  margin-left: 30px;
+}
+
+/* Keep existing */
+.nav-logo {
+  width: 25%;
+  height: auto;
+}
+
+/* On small devices, reduce logo width for better fit */
+@media (max-width: 767.98px) {
+  .nav-logo {
+    width: 40%;
+    max-width: 140px;
+    min-width: 120px; /* prevent too small */
+  }
+  /* Reduce nav-link left margin on small screens */
+  .nav-link {
+    margin-left: 10px;
+    font-size: 0.9rem; /* optional smaller font on small */
+  }
+
+  /* Optional: reduce padding inside container on small */
+  .container.p-2.ps-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .navbar-toggler {
+    font-size: small;
+    width: 45px;
+    height: 30px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 2px 1px 10px #0d6efd;
+    outline: 0;
+    text-decoration: none;
+  }
+}

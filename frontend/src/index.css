@@ -1,0 +1,9 @@
+/* In a global CSS file (e.g., index.css, App.css) */
+html,
+body {
+  margin: 0;
+  padding-top: 40px;
+  box-sizing: border-box; /* Good practice */
+  width: 100%; /* Ensure html and body also take full width */
+  overflow-x: hidden; /* Prevent horizontal scrollbar if elements slightly exceed width */
+}

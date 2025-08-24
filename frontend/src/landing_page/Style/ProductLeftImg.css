@@ -1,0 +1,72 @@
+.right_para {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+/* Make image fluid */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* On small screens, stack columns vertically */
+@media (max-width: 767.98px) {
+  /* Force row to vertical stack */
+  .row.mt-3.ms-3.px-5.pt-3.me-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center; /* center horizontally */
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Full width columns with no side margin */
+  .row.mt-3.ms-3.px-5.pt-3.me-2 > .col {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-left: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Remove extra left margin on second col */
+  .col.ms-5 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* Center heading and paragraph */
+  h2.my-4.ps-0.pt-3,
+  .right_para {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Link columns stacked and centered */
+  .row > .col-5,
+  .row > .col.ms-0 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Center badges horizontally */
+  .Badges {
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 1rem !important;
+  }
+
+  /* Badge spacing */
+  .badges.ms-3 {
+    margin-left: 1rem !important;
+  }
+
+  .container {
+    margin: 0 !important;
+  }
+}

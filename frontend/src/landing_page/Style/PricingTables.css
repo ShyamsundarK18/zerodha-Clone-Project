@@ -1,0 +1,63 @@
+.col h6 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.col p,
+ul {
+  font-size: 0.9rem;
+}
+
+/* Remove <br> tags from tbody and instead add spacing via CSS */
+table tbody tr + tr {
+  border-top: 1rem solid transparent; /* space between rows */
+}
+
+/* Responsive font size for small devices */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 1rem !important; /* smaller tab fonts on mobile */
+  }
+
+  table {
+    font-size: 0.85rem !important;
+  }
+
+  .table-responsive {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .nav-underline {
+    padding-left: 0 !important;
+  }
+}
+
+/* Smaller font size on very small devices */
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.9rem !important;
+  }
+
+  table {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Buttons (tabs) styling to avoid wrapping on small devices */
+.nav-link {
+  white-space: nowrap;
+}
+
+/* For accessibility and hover focus */
+.nav-link.active,
+.nav-link:hover,
+.nav-link:focus {
+  font-weight: 600;
+}
+
+/* Ensure your container padding does not break on mobile */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

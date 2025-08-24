@@ -1,0 +1,74 @@
+.team_image {
+  border-radius: 50%;
+  width: 65%;
+}
+
+.team_bio_icon {
+  margin-left: 5.5rem;
+  padding-top: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  background-color: white;
+}
+
+.team_bio_para {
+  border: none;
+  width: 70%;
+  line-height: 2rem;
+  margin-top: 1rem;
+  font-size: medium;
+}
+
+.team_bio_icon i {
+  opacity: 0.5;
+}
+
+.team_bio_icon i:hover {
+  opacity: 1;
+}
+
+/* Make columns full-width on small screens, keep default on medium+ */
+@media (max-width: 767.98px) {
+  .col {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .team_image {
+    max-width: 100%; /* responsive images */
+    height: auto;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Optional: reduce left margin of headings and paragraphs for small */
+  h4.ms-5,
+  p.ms-5,
+  p.ps-5 {
+    margin-left: 1rem !important;
+    padding-left: 0 !important;
+  }
+
+  /* Optional: reduce container and row left margin for better fit */
+  .container.px-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .row.ms-5 {
+    margin-left: 0 !important;
+  }
+
+  /* Center titles and positions */
+  h4.ms-5,
+  p.ms-5,
+  p.ps-5 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  .bio-section {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,24 @@
+.hero_heading {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero_heading {
+    font-size: 1.8rem; /* smaller heading on phones */
+  }
+
+  .container p {
+    font-size: 1rem; /* slightly smaller paragraph text */
+  }
+}
+
+/* Replace the <br><br> spacing with margin-bottom for better control */
+.container > br {
+  display: none; /* hide the br tags */
+}
+
+.container p:last-of-type {
+  margin-bottom: 3rem;
+}

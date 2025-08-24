@@ -1,0 +1,16 @@
+.people_img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.people_para {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .people_img {
+    width: 50% !important; /* shrink on mobile */
+    margin-left: 0 !important; /* center align */
+  }
+}

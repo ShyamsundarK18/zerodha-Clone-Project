@@ -1,0 +1,39 @@
+.universe-logos {
+  width: 45%;
+}
+
+.universe-logos-ditto {
+  width: 35%;
+}
+
+/* Optional: adjust margin-bottom on smaller devices */
+@media (max-width: 991.98px) {
+  .universe-logos,
+  .universe-logos-ditto {
+    width: 60%;
+    margin-bottom: 3rem !important;
+  }
+
+  .universe-row {
+    margin-top: 5rem !important;
+  }
+
+  .universe-btn {
+    min-width: 50%;
+    margin-top: 5rem !important;
+  }
+  .logo-para {
+    margin-bottom: 5rem !important;
+  }
+  .sensibullLogo {
+    margin-top: 3rem !important;
+  }
+
+  .tijori {
+    margin-top: 3rem !important;
+  }
+
+  .special-heading {
+    padding-right: 0 !important;
+  }
+}

@@ -1,0 +1,30 @@
+.hero_heading {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-left: 3rem;
+}
+
+.hero_para {
+  line-height: 1.7rem;
+}
+
+.hero_section {
+  padding-top: 5rem; /* Adjust based on navbar height */
+}
+/* Responsive tweaks for mobile */
+@media (max-width: 768px) {
+  .hero_heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .hero_para {
+    font-size: 0.95rem;
+  }
+
+  .hero_section {
+    padding-top: 6rem; /* a bit more for mobile */
+  }
+}
