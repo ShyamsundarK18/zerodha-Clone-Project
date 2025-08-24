@@ -1,0 +1,56 @@
+.notfound-container {
+  padding: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.notfound-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0 40px;
+}
+
+.notfound-text {
+  flex: 1;
+  padding: 40px;
+}
+
+.notfound-code {
+  color: #6c757d; /* muted gray */
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.notfound-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.notfound-message {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.notfound-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.notfound-link:hover {
+  text-decoration: underline;
+}
+
+.notfound-image-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
