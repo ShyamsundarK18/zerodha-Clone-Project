@@ -41,6 +41,18 @@ function Login() {
 
   return (
     <div className="row mt-3">
+      {/* 🔹 Fullscreen Overlay Spinner */}
+      {loading && (
+        <div
+          className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+          style={{ background: "rgba(255, 255, 255, 0.7)", zIndex: 1050 }}
+        >
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      )}
+
       <h1 className="col-6 offset-5 my-5 fs-3">Login</h1>
       <div className="col-6 offset-3">
         <form className="needs-validation" noValidate onSubmit={handleSubmit}>
