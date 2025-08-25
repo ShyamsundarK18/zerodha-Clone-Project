@@ -4,6 +4,7 @@ import axios from "axios";
 function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // NEW
 
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
   const DASHBOARD_URL = import.meta.env.VITE_DASHBOARD_URL;
@@ -14,6 +15,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    setLoading(true); // start loading
 
     try {
       const response = await axios.post(
@@ -32,6 +34,8 @@ function Login() {
       )}&username=${encodeURIComponent(user.username)}`;
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
+    } finally {
+      setLoading(false); // stop loading
     }
   };
 
@@ -76,8 +80,19 @@ function Login() {
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
-            Login
+          <button type="submit" className="btn btn-primary" disabled={loading}>
+            {loading ? (
+              <>
+                <span
+                  className="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Logging in...
+              </>
+            ) : (
+              "Login"
+            )}
           </button>
         </form>
       </div>
