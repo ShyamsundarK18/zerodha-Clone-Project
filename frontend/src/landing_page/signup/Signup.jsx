@@ -6,6 +6,7 @@ function Signup() {
   const [form, setForm] = useState({ username: "", email: "", password: "" });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
@@ -17,6 +18,7 @@ function Signup() {
     e.preventDefault();
     setError("");
     setSuccess("");
+    setLoading(true);
 
     try {
       const res = await axios.post(
@@ -32,6 +34,8 @@ function Signup() {
       }
     } catch (err) {
       setError(err.response?.data?.message || "Signup failed");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -94,10 +98,24 @@ function Signup() {
               required
             />
           </div>
-
-          <button type="submit" className="btn btn-primary">
-            Signup
+          <button type="submit" className="btn btn-primary" disabled={loading}>
+            {loading ? (
+              <>
+                <span
+                  className="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Signing up...
+              </>
+            ) : (
+              "Signup"
+            )}
           </button>
+
+          {/* <button type="submit" className="btn btn-primary">
+            Signup
+          </button> */}
         </form>
       </div>
     </div>
